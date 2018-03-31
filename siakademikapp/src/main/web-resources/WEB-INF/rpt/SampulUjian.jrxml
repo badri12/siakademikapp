@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-06-12T11:51:42 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SampulUjian" language="groovy" pageWidth="612" pageHeight="1008" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="19f1f3ee-d96b-48ee-b8a2-8181f6b7a970">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="title" class="java.lang.String"/>
+	<parameter name="basepath" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<field name="dosenpengampu" class="java.lang.String">
+		<fieldDescription><![CDATA[dosenpengampu]]></fieldDescription>
+	</field>
+	<field name="haritanggal" class="java.lang.String">
+		<fieldDescription><![CDATA[haritanggal]]></fieldDescription>
+	</field>
+	<field name="kodematakuliah" class="java.lang.String">
+		<fieldDescription><![CDATA[kodematakuliah]]></fieldDescription>
+	</field>
+	<field name="matakuliah" class="java.lang.String">
+		<fieldDescription><![CDATA[matakuliah]]></fieldDescription>
+	</field>
+	<field name="pengawas" class="java.lang.String">
+		<fieldDescription><![CDATA[pengawas]]></fieldDescription>
+	</field>
+	<field name="prodi" class="java.lang.String">
+		<fieldDescription><![CDATA[prodi]]></fieldDescription>
+	</field>
+	<field name="semester" class="java.lang.String">
+		<fieldDescription><![CDATA[semester]]></fieldDescription>
+	</field>
+	<field name="tahunajaran" class="java.lang.String">
+		<fieldDescription><![CDATA[tahunajaran]]></fieldDescription>
+	</field>
+	<field name="waktu" class="java.lang.String">
+		<fieldDescription><![CDATA[waktu]]></fieldDescription>
+	</field>
+	<field name="kodekelas" class="java.lang.String">
+		<fieldDescription><![CDATA[kodekelas]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="11" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="5" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="3" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="271" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Transparent" x="-1" y="0" width="572" height="79" uuid="c2517c0f-56d4-4b21-9c35-359f855d3206"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="80" y="36" width="470" height="18" uuid="357e2d2b-13a2-4693-aa80-f8b33119a3fe"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{title}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement mode="Transparent" x="-1" y="79" width="572" height="181" uuid="aac3f5d1-c0b8-4fa5-9f43-858d865d3a57"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="20" y="89" width="140" height="20" uuid="65948506-fa89-45cb-9ba7-93c41264c772"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HARI / TANGGAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="129" width="140" height="20" uuid="0c7a49de-0e96-420e-b1d0-d6855657e5ff"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PROGRAM STUDI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="149" width="140" height="20" uuid="9cb569ee-bcb0-4cab-baea-581e48661035"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MATAKULIAH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="169" width="140" height="20" uuid="f9b86f2b-102d-49eb-a0d8-13d60d8f513f"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KODE KELAS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="109" width="140" height="20" uuid="a240547c-b678-471a-a133-5e05be2d83da"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[WAKTU / RUANGAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="189" width="140" height="20" uuid="2232b140-484e-40db-868f-b4f2eab69ff7"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DOSEN PENGAMPU]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="170" width="370" height="19" uuid="aa15b708-3f5b-4d85-a710-24033b490a28"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[":  "+$F{kodekelas}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="180" y="210" width="370" height="20" uuid="98e19c9b-e94a-402a-b3cf-26bedb5cb7f4"/>
+				<box bottomPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField pattern="">
+				<reportElement x="180" y="150" width="70" height="19" uuid="fbeb7dc4-e842-4180-90ff-74fd08c158f5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[":  "+$F{kodematakuliah}]]></textFieldExpression>
+			</textField>
+			<textField pattern="">
+				<reportElement x="250" y="150" width="300" height="19" uuid="237ccfc3-e81c-4943-9c74-d91a7ef2207f"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{matakuliah}]]></textFieldExpression>
+			</textField>
+			<textField pattern="">
+				<reportElement x="180" y="130" width="370" height="19" uuid="8dc75ff2-f928-4d9c-931f-eb3f5b400a7d"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[":  "+$F{prodi}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="180" y="109" width="370" height="20" uuid="98e217a6-2e77-4fdd-9b35-fb6a697fc9a7"/>
+				<box bottomPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:                          /]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="89" width="370" height="20" uuid="0a2526cb-1dcb-4b2d-9d3a-c66efc9a2308"/>
+				<box bottomPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Dashed" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Dashed" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Dashed" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Dashed" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:                          /]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="80" y="54" width="470" height="20" uuid="90cc4b03-cf8b-409d-95f7-cb81f3df8dc4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{semester}+" / Tahun Akademik "+ $F{tahunajaran}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="80" y="4" width="470" height="19" uuid="10f47624-6569-4e1f-8584-887ca3fa91d3"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UNIVERSITAS HAMZANWADI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="210" width="140" height="20" uuid="abbc7ac5-11c6-41fa-87e5-4b203d425d52"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PENGAWAS]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="190" width="370" height="19" uuid="a58c634b-2c76-4fc2-b18a-45af935ae009"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[":  "+$F{dosenpengampu}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="9" y="5" width="68" height="68" uuid="022e6890-05c5-4f86-80df-39d5040dffd2">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{basepath}+"image/logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="85" y="19" width="470" height="19" uuid="a42b6a3c-7215-44da-8894-82e1ad289239"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FAKULTAS TEKNIK]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="7" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

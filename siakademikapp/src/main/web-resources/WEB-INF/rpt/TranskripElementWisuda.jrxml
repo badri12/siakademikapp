@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-05-09T17:08:44 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" language="groovy" pageWidth="283" pageHeight="481" whenNoDataType="NoPages" columnWidth="276" leftMargin="4" rightMargin="3" topMargin="5" bottomMargin="5" isSummaryNewPage="true" whenResourceMissingType="Empty" uuid="d72ff107-3a31-43c3-a01c-2e337b71e36b">
+	<property name="ireport.callouts" value="callouts.1.fg=0,0,0\n callouts.1.bg=255,255,0\n "/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="totsks" class="java.lang.String"/>
+	<parameter name="ipk" class="java.lang.String"/>
+	<parameter name="jumnilai" class="java.lang.String"/>
+	<parameter name="predikat" class="java.lang.String"/>
+	<parameter name="printJudul" class="java.lang.String">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<parameter name="prodi" class="java.lang.String"/>
+	<parameter name="batasNo" class="java.lang.Integer"/>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<field name="kn" class="java.lang.Integer">
+		<fieldDescription><![CDATA[kn]]></fieldDescription>
+	</field>
+	<field name="kodemk" class="java.lang.String">
+		<fieldDescription><![CDATA[kodemk]]></fieldDescription>
+	</field>
+	<field name="namamk" class="java.lang.String">
+		<fieldDescription><![CDATA[namamk]]></fieldDescription>
+	</field>
+	<field name="nilaiangka" class="java.lang.Integer">
+		<fieldDescription><![CDATA[nilaiangka]]></fieldDescription>
+	</field>
+	<field name="nilaihuruf" class="java.lang.String">
+		<fieldDescription><![CDATA[nilaihuruf]]></fieldDescription>
+	</field>
+	<field name="sks" class="java.lang.Integer">
+		<fieldDescription><![CDATA[sks]]></fieldDescription>
+	</field>
+	<field name="semester" class="java.lang.Integer">
+		<fieldDescription><![CDATA[semester]]></fieldDescription>
+	</field>
+	<group name="semester">
+		<groupExpression><![CDATA[$F{semester}]]></groupExpression>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<columnHeader>
+		<band height="24" splitType="Stretch">
+			<staticText>
+				<reportElement x="54" y="0" width="138" height="24" uuid="625fc5ae-1d86-42fd-a0b4-d3d2b6d7a184">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font fontName="ArialFontEmb" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MATA KULIAH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="0" width="38" height="24" uuid="e0319594-c325-4c6e-a277-ea2479945730"/>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font fontName="ArialFontEmb" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KODE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="192" y="0" width="18" height="24" uuid="90fcce4c-9fe6-461b-b5e0-5b178464e137">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font fontName="ArialFontEmb" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[K]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="16" height="24" uuid="91733eaa-b999-41a6-8669-5e2fe8f8082b">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="cm"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="ArialFontEmb" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="0" width="48" height="12" uuid="54747bba-f889-4615-a90e-4774b56c80ee">
+					<property name="local_mesure_unitheight" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="ArialFontEmb" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NILAI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="12" width="24" height="12" uuid="511f193c-d9c2-4ddf-ac92-79428e753876">
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font fontName="ArialFontEmb" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Huruf]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="234" y="12" width="24" height="12" uuid="ea7c3b49-b7e7-42ae-a2ae-61b941ec4f6d">
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="ArialFontEmb" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Angka]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="258" y="0" width="18" height="24" uuid="44f16fc3-ca87-4079-ac93-5e5a626e5f65">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="ArialFontEmb" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KN]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="10" splitType="Stretch">
+			<textField>
+				<reportElement x="16" y="0" width="38" height="10" uuid="0e6369ae-dd6d-4f58-ab82-be3940a51d9e">
+					<property name="local_mesure_unitheight" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ArialFontEmb" size="7.5"/>
+					<paragraph leftIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kodemk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="54" y="0" width="138" height="10" uuid="7da64285-0808-48ff-8f20-b866ce261700">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="ArialFontEmb" size="7.5"/>
+					<paragraph leftIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{namamk}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="210" y="0" width="24" height="10" uuid="dc21b532-5e0d-456d-b2c6-68a9219e287d"/>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ArialFontEmb" size="7.5"/>
+					<paragraph leftIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nilaihuruf}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="192" y="0" width="18" height="10" uuid="c0bb3589-d1fb-44b9-bdfe-012d0c539ee1"/>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ArialFontEmb" size="7.5"/>
+					<paragraph leftIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sks}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="234" y="0" width="24" height="10" uuid="fc9dc046-38f6-4a79-8f99-d99d4ed18223"/>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ArialFontEmb" size="7.5"/>
+					<paragraph leftIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nilaiangka}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="">
+				<reportElement x="258" y="0" width="18" height="10" uuid="f6c3730e-636a-4c81-b19e-fe1c83bf5a9e">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="ArialFontEmb" size="7.5"/>
+					<paragraph leftIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nilaiangka}*$F{sks}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="16" height="10" uuid="f53ae7dc-19dd-4d99-9947-36bfe0127797">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="cm"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="ArialFontEmb" size="7.5"/>
+					<paragraph leftIndent="3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{batasNo}==null? $V{REPORT_COUNT}:$P{batasNo}+$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="30" splitType="Stretch">
+			<printWhenExpression><![CDATA[$P{prodi}!=null]]></printWhenExpression>
+			<textField pattern="">
+				<reportElement x="258" y="0" width="18" height="15" uuid="bb5139be-fed2-46dc-9fcf-db8f3e98a693">
+					<property name="com.jaspersoft.studio.unit.y" value="cm"/>
+					<property name="com.jaspersoft.studio.unit.x" value="cm"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ArialFontEmb" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jumnilai}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="192" y="0" width="18" height="15" uuid="865125e5-556b-43ed-908a-be47b58b9eb7">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ArialFontEmb" size="7.5" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totsks}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="192" height="15" uuid="b6c6dc7a-1e39-40c3-a258-bf97d58880e9">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="cm"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="ArialFontEmb" size="8.5" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="15" width="192" height="15" uuid="7489c240-6710-4375-95ca-9663cc3a0d5c">
+					<property name="local_mesure_unitheight" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="ArialFontEmb" size="8.5" isBold="true"/>
+					<paragraph leftIndent="1"/>
+				</textElement>
+				<text><![CDATA[Indeks Prestasi Kumulatif]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="192" y="15" width="84" height="15" uuid="96f65b6d-4122-4448-ad45-dd2e0bac4c4f">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font fontName="ArialFontEmb" size="8.5" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ipk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="210" y="0" width="48" height="15" uuid="0da803a3-651d-4aa7-bb13-e03fd1488956">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font fontName="ArialFontEmb"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+</jasperReport>
